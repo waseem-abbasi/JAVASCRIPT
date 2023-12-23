@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onkeypress="keyPress()" onresize="onResize()" >
+    <h1 style="text-align:center ;border: 2px solid yellow;color:red">events</h1>
+    <h2 style=" yellow;color:red"> click events</h2>
+    <ol>
+        <li>click events <button onclick="hello()">click</button></li>
+        <li>double click <button ondblclick="doubleClick()">dblclick</button></li>
+        <li>Right click <button oncontextmenu="rightClick()">right lick</button>
+        </li>
+    </ol>
+    <!-- //mouse events -->
+    <h2 style=" yellow;color:red"> mouse events</h2>
+    <ol>
+        <li>Mosuse Hover <button onmouseenter="mouseEnter()">mouse enter</button></li>
+        <li>mouse out <button onmouseout="mouseOut()">mouse out</button></li>
+        <li>Mosue Down<button onmouseout="mouseDown()">mouse down</button></li>
+        <li>Mosuse Up <button onmouseup="mouseUp()">mouse up</button></li>
+    </ol>
+    <!-- load events(only runs body tag and forms) -->
+    <h2 style="color:red"> key events</h2>
+    <ol>
+        <li>any key press(only use body and forms)<font color="green" id="font">enter the any key</font></li>
+        <li>onkeyup(only use body and forms)<font color="green" id="font">enter the any key</font></li>
+    </ol>
+    <!-- load events -->
+    <h2 style=" yellow;color:red"> Load events</h2>
+    <ol>
+        <li>Resize(you check this event please resize the screen)</li>
+        <li>onscroll <p onscroll="scroll()">It was originally taken from a Latin text written by a Roman Scholar, Sceptic and Philosopher by the name of Marcus Tullius Cicero, who influenced the Latin language greatly.
+
+            The "filler" text we know today has been altered over the years (in fact "Lorem" isn't actually a Latin word. It is suggested that the reason that the text starts with "Lorem" is because there was a page break spanning the word "Do-lorem". If you a re looking for a translation of the text, it's meaningless. The original text talks about the pain and love involved in the pursuit of pleasure or something like that.
+            
+            The reason we use Lorem Ipsum is simple. If we used real text, it would possibly distract from the DESIGN of a page (or indeed, might even be mistakenly inappropriate. Or if we used something like "Insert Text Here...", this would also distract from the design. Using Lorem Ipsum allows us to SEE the design without being distracted by readable or unrealistic text.</p></li>
+    </ol>
+     
+</body>
+    <script>
+        // click events in javascript
+        function hello(){
+            
+           document.querySelector("h1").innerHTML = "1. Click Events";
+          
+        } 
+        function doubleClick(){
+            
+            document.querySelector("h1").innerHTML = "2.Double click";
+        }
+        function rightClick(){
+            document.querySelector("h1").innerHTML = "3.Right click";
+        }
+        //mouse events
+        function mouseEnter(){
+            document.querySelector("body").style.background ="yellow";
+        }
+        function mouseOut(){
+            document.querySelector("body").style.background ="orange";
+        }
+        function mouseDown(){
+            document.querySelector("body").style.background ="silver";
+        }
+        function mouseUp(){
+            document.querySelector("body").style.background ="skyblue";
+        }
+        //key evenst
+        function keyPress(){
+            var check = document.getElementById("font").innerHTML = "<h3>this event work properlyk</h3>";
+            alert("oksss");
+        }
+        //load events
+        function onResize(){
+            alert("onresize work properly");
+        }
+        function scroll(){
+            alert("on scroll work properly");
+        }
+        </script>
+ </html>
