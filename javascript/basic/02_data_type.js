@@ -1,0 +1,1 @@
+//data type specify diffrent sizes and values that can be store in variable
